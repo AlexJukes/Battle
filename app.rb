@@ -20,5 +20,11 @@ enable :sessions
     erb :play
   end
 
+  post '/help' do
+    @player_1 = session[:player_1]
+    @player_2 = session[:player_2]
+    erb :help
+  end
+
   run! if app_file == $0
 end
