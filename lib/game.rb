@@ -1,10 +1,11 @@
 require 'player'
 class Game
 
-  attr_reader :player_2
+  attr_reader :player_1, :player_2
 
-  def initialize
-    @player_2 = Player.new("Jess")
+  def initialize(player_name_1, player_name_2)
+    @player_1 = Player.new(player_name_1)
+    @player_2 = Player.new(player_name_2)
   end
 
   def help(player)
