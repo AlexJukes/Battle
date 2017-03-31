@@ -16,10 +16,5 @@ describe Player do
     end
   end
 
-  describe '#help' do
-    it "adds 10 LP to the player's friend" do
-      expect{player.help(player_2)}.to change{player_2.LP}.by(Player::ADD_LP)
-    end
-  end
 
 end

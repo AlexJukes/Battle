@@ -14,10 +14,6 @@ class Player
     self.LP += ADD_LP
   end
 
-  def help(player)
-    player.receive_LP
-  end
-
   private
   attr_writer :LP
 end
