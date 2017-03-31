@@ -10,12 +10,12 @@ class Player
     @LP = INITIAL_LP
   end
 
-  def increase_LP
+  def receive_LP
     self.LP += ADD_LP
   end
 
   def help(player)
-    player.increase_LP
+    player.receive_LP
   end
 
   private

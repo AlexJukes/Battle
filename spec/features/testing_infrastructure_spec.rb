@@ -21,7 +21,7 @@ require_relative '../../app'
     scenario "players' help increases friend's LP" do
       sign_in_and_play
       click_button 'Help'
-      expect(page).to have_content 'Euge LP: 11'
+      expect(page).to have_content 'Alex LP: 11'
     end
 
   end
